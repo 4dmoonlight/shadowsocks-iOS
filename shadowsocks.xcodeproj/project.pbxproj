@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049DB1BD1D17CD6100B956E1 /* SWBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1BC1D17CD6100B956E1 /* SWBUtils.m */; };
+		049DB1BE1D17CD6100B956E1 /* SWBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1BC1D17CD6100B956E1 /* SWBUtils.m */; };
+		049DB1BF1D17CD6100B956E1 /* SWBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1BC1D17CD6100B956E1 /* SWBUtils.m */; };
 		6205309618D4443E00887D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		6205309918D4443E00887D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205309818D4443E00887D3E /* main.m */; };
 		620530A518D4444E00887D3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629AC93F18B49C33001D2771 /* SystemConfiguration.framework */; };
@@ -139,7 +142,10 @@
 		62E2E1991A5AB21E00C9A2E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2E1981A5AB21E00C9A2E1 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E2E19B1A5AB23700C9A2E1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E2E19A1A5AB23700C9A2E1 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		62E2E19D1A5ABE5C00C9A2E1 /* abp.js in Resources */ = {isa = PBXBuildFile; fileRef = 62E2E19C1A5ABE5C00C9A2E1 /* abp.js */; };
+		74CDD679A4FECD27FD65A2DD /* libPods-libshadowsocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2AE06B964A02B0DBE6DEEC /* libPods-libshadowsocks.a */; };
+		8EE0670B3BE55C5F047D1D98 /* libPods-shadowsocks_sysconf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC3AE10A48F708BD20F29CB /* libPods-shadowsocks_sysconf.a */; };
 		96D80C05176CE1D7006C8078 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D80C04176CE1D7006C8078 /* AVFoundation.framework */; };
+		B44AA7A09D2C807FD3E110CB /* libPods-shadowsocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D3AC00589C0E0D4F8AE9B4 /* libPods-shadowsocks.a */; };
 		EB18906527B59E4F6A70A14A /* ShadowsocksRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */; };
 		EB189096BC8B91FA0F60A34C /* 3gnet_disable.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB1897AD03717EB5E44BA24B /* 3gnet_disable.mobileconfig */; };
 		EB1890D6331E61914013309F /* polipo_disable.config in Resources */ = {isa = PBXBuildFile; fileRef = EB189F29205BA2AB998B867D /* polipo_disable.config */; };
@@ -152,6 +158,7 @@
 		EB189E4CAA0DEF020070DC84 /* SWBAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB189EE1CF6E8C6C431B87BA /* SWBAboutController.m */; };
 		EB189E8C8B1866196A4DA43B /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB1891FD08E70E9E9DC84AFD /* about.txt */; };
 		EB189FE30A2E13F4D10D59ED /* SWBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = EB189ABF1BF9729F1E0E8F72 /* SWBApplication.m */; };
+		F30C65694D64C930D97D77F7 /* libPods-ShadowsocksX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2214102F302EF064B54589 /* libPods-ShadowsocksX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +233,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		049DB1BB1D17CD6100B956E1 /* SWBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBUtils.h; sourceTree = "<group>"; };
+		049DB1BC1D17CD6100B956E1 /* SWBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBUtils.m; sourceTree = "<group>"; };
+		09F7E8426329C76040380F0A /* Pods-libshadowsocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libshadowsocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-libshadowsocks/Pods-libshadowsocks.release.xcconfig"; sourceTree = "<group>"; };
+		13E25C0B403960F5980F8A97 /* Pods-shadowsocks_sysconf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks_sysconf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks_sysconf/Pods-shadowsocks_sysconf.debug.xcconfig"; sourceTree = "<group>"; };
+		3C37277C988C81455B93297F /* Pods-ShadowsocksX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX/Pods-ShadowsocksX.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC3AE10A48F708BD20F29CB /* libPods-shadowsocks_sysconf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shadowsocks_sysconf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205309518D4443E00887D3E /* shadowsocks_sysconf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shadowsocks_sysconf; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205309818D4443E00887D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6205309B18D4443E00887D3E /* shadowsocks_sysconf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks_sysconf-Prefix.pch"; sourceTree = "<group>"; };
@@ -442,7 +455,14 @@
 		62E2E1981A5AB21E00C9A2E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		62E2E19A1A5AB23700C9A2E1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		62E2E19C1A5ABE5C00C9A2E1 /* abp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abp.js; sourceTree = "<group>"; };
+		7690680B85C2CC2BB4C0336C /* Pods-shadowsocks_sysconf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks_sysconf.release.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks_sysconf/Pods-shadowsocks_sysconf.release.xcconfig"; sourceTree = "<group>"; };
+		8B2214102F302EF064B54589 /* libPods-ShadowsocksX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShadowsocksX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D80C04176CE1D7006C8078 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B34E90A7C96FAB88F3CE8D3B /* Pods-ShadowsocksX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX/Pods-ShadowsocksX.release.xcconfig"; sourceTree = "<group>"; };
+		B6875BFF13AD884920C584F7 /* Pods-libshadowsocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libshadowsocks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-libshadowsocks/Pods-libshadowsocks.debug.xcconfig"; sourceTree = "<group>"; };
+		C8D3AC00589C0E0D4F8AE9B4 /* libPods-shadowsocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shadowsocks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F086D835B0070B483EDEC2 /* Pods-shadowsocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks.debug.xcconfig"; sourceTree = "<group>"; };
+		DA376E731471FC47463CB7F4 /* Pods-shadowsocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks.release.xcconfig"; sourceTree = "<group>"; };
 		EB189069EF341E65B5414D00 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		EB189071407B3A2A9B4C83CB /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
 		EB1891B68FCBD841C5E461B6 /* About.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = About.md; sourceTree = SOURCE_ROOT; };
@@ -464,6 +484,7 @@
 		EB189F12BEB086705288D293 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = SOURCE_ROOT; };
 		EB189F29205BA2AB998B867D /* polipo_disable.config */ = {isa = PBXFileReference; lastKnownFileType = file.config; path = polipo_disable.config; sourceTree = "<group>"; };
 		EB189F33A120A109D84FF977 /* SWBConfigWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBConfigWindowController.h; sourceTree = "<group>"; };
+		ED2AE06B964A02B0DBE6DEEC /* libPods-libshadowsocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libshadowsocks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +494,7 @@
 			files = (
 				620530A518D4444E00887D3E /* SystemConfiguration.framework in Frameworks */,
 				6205309618D4443E00887D3E /* Foundation.framework in Frameworks */,
+				8EE0670B3BE55C5F047D1D98 /* libPods-shadowsocks_sysconf.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +519,7 @@
 				621571AB16CF6BCB003D96B4 /* Foundation.framework in Frameworks */,
 				621571AD16CF6BCB003D96B4 /* CoreGraphics.framework in Frameworks */,
 				62DAB9E0177A11D7003DFFDE /* Crashlytics.framework in Frameworks */,
+				B44AA7A09D2C807FD3E110CB /* libPods-shadowsocks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +529,7 @@
 			files = (
 				623A7EBB1795AE8000DF11DF /* Foundation.framework in Frameworks */,
 				623A7ECC1795B15500DF11DF /* libcrypto.a in Frameworks */,
+				74CDD679A4FECD27FD65A2DD /* libPods-libshadowsocks.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +544,7 @@
 				625E5BBE19EA3855007A5124 /* WebKit.framework in Frameworks */,
 				62E2E19B1A5AB23700C9A2E1 /* Security.framework in Frameworks */,
 				62E2E1991A5AB21E00C9A2E1 /* SystemConfiguration.framework in Frameworks */,
+				F30C65694D64C930D97D77F7 /* libPods-ShadowsocksX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +578,7 @@
 				621571A716CF6BCB003D96B4 /* Frameworks */,
 				621571A616CF6BCB003D96B4 /* Products */,
 				EB1891FD08E70E9E9DC84AFD /* about.txt */,
+				CF90AA7314D3F6702EF7BD49 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -600,6 +626,10 @@
 				627A6DF818B47E9300493BBC /* Cocoa.framework */,
 				627A6E1718B47E9300493BBC /* XCTest.framework */,
 				627A6DFA18B47E9300493BBC /* Other Frameworks */,
+				8B2214102F302EF064B54589 /* libPods-ShadowsocksX.a */,
+				ED2AE06B964A02B0DBE6DEEC /* libPods-libshadowsocks.a */,
+				C8D3AC00589C0E0D4F8AE9B4 /* libPods-shadowsocks.a */,
+				5CC3AE10A48F708BD20F29CB /* libPods-shadowsocks_sysconf.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -771,6 +801,8 @@
 				628C91C31A07AB4500BA1566 /* Configuration.m */,
 				EB1892B5027A6B1F1E2CDC12 /* ProfileManager.m */,
 				EB189071407B3A2A9B4C83CB /* ProfileManager.h */,
+				049DB1BB1D17CD6100B956E1 /* SWBUtils.h */,
+				049DB1BC1D17CD6100B956E1 /* SWBUtils.m */,
 			);
 			path = ShadowsocksX;
 			sourceTree = "<group>";
@@ -974,6 +1006,21 @@
 			path = AFNetworking/AFNetworking;
 			sourceTree = SOURCE_ROOT;
 		};
+		CF90AA7314D3F6702EF7BD49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C37277C988C81455B93297F /* Pods-ShadowsocksX.debug.xcconfig */,
+				B34E90A7C96FAB88F3CE8D3B /* Pods-ShadowsocksX.release.xcconfig */,
+				B6875BFF13AD884920C584F7 /* Pods-libshadowsocks.debug.xcconfig */,
+				09F7E8426329C76040380F0A /* Pods-libshadowsocks.release.xcconfig */,
+				D6F086D835B0070B483EDEC2 /* Pods-shadowsocks.debug.xcconfig */,
+				DA376E731471FC47463CB7F4 /* Pods-shadowsocks.release.xcconfig */,
+				13E25C0B403960F5980F8A97 /* Pods-shadowsocks_sysconf.debug.xcconfig */,
+				7690680B85C2CC2BB4C0336C /* Pods-shadowsocks_sysconf.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -981,8 +1028,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 620530A418D4443E00887D3E /* Build configuration list for PBXNativeTarget "shadowsocks_sysconf" */;
 			buildPhases = (
+				0CC43062AF3659BCA2C5D79F /* [CP] Check Pods Manifest.lock */,
 				6205309118D4443E00887D3E /* Sources */,
 				6205309218D4443E00887D3E /* Frameworks */,
+				8971B1FDFE83936BF4128162 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -997,10 +1046,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 621571CB16CF6BCB003D96B4 /* Build configuration list for PBXNativeTarget "shadowsocks" */;
 			buildPhases = (
+				293E75D0D97A5BBF99CFAFEE /* [CP] Check Pods Manifest.lock */,
 				621571A116CF6BCB003D96B4 /* Sources */,
 				621571A216CF6BCB003D96B4 /* Frameworks */,
 				621571A316CF6BCB003D96B4 /* Resources */,
 				62DAB9DE177A11AD003DFFDE /* ShellScript */,
+				A25FEA565C327E5DD19AC1F7 /* [CP] Embed Pods Frameworks */,
+				5BA19A5F92C59DEE491CAD04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1017,9 +1069,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 623A7EC51795AE8000DF11DF /* Build configuration list for PBXNativeTarget "libshadowsocks" */;
 			buildPhases = (
+				64BAF85B9C955F28E8A9C753 /* [CP] Check Pods Manifest.lock */,
 				623A7EB61795AE8000DF11DF /* Sources */,
 				623A7EB71795AE8000DF11DF /* Frameworks */,
 				623A7EB81795AE8000DF11DF /* CopyFiles */,
+				3D0FDECEBED4C69C2D1BACBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1034,9 +1088,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 627A6E2C18B47E9300493BBC /* Build configuration list for PBXNativeTarget "ShadowsocksX" */;
 			buildPhases = (
+				27FF4DCBA38E2530542FAF1F /* [CP] Check Pods Manifest.lock */,
 				627A6DF318B47E9300493BBC /* Sources */,
 				627A6DF418B47E9300493BBC /* Frameworks */,
 				627A6DF518B47E9300493BBC /* Resources */,
+				B1F2CB6188D8E8602FECF3B9 /* [CP] Embed Pods Frameworks */,
+				427098185B36A4553E467132 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1055,8 +1112,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SWB;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = clowwindy;
+				TargetAttributes = {
+					627A6DF618B47E9300493BBC = {
+						DevelopmentTeam = 6XJANXWF44;
+					};
+				};
 			};
 			buildConfigurationList = 621571A016CF6BCA003D96B4 /* Build configuration list for PBXProject "shadowsocks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1174,6 +1236,96 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CC43062AF3659BCA2C5D79F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27FF4DCBA38E2530542FAF1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		293E75D0D97A5BBF99CFAFEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0FDECEBED4C69C2D1BACBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-libshadowsocks/Pods-libshadowsocks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427098185B36A4553E467132 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShadowsocksX/Pods-ShadowsocksX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BA19A5F92C59DEE491CAD04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62DAB9DE177A11AD003DFFDE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1186,6 +1338,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Crashlytics.framework/run fa65e4ab45ef1c9c69682529bee0751cd22d5d80";
+		};
+		64BAF85B9C955F28E8A9C753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8971B1FDFE83936BF4128162 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shadowsocks_sysconf/Pods-shadowsocks_sysconf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A25FEA565C327E5DD19AC1F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F2CB6188D8E8602FECF3B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShadowsocksX/Pods-ShadowsocksX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1238,6 +1450,7 @@
 				62D85A9C176DA6FC00FE5575 /* http.c in Sources */,
 				62D85A9D176DA6FC00FE5575 /* http_parse.c in Sources */,
 				62D85A9F176DA6FC00FE5575 /* io.c in Sources */,
+				049DB1BD1D17CD6100B956E1 /* SWBUtils.m in Sources */,
 				62E27E5918C1D0CF0086033D /* GZIP.m in Sources */,
 				62D85AA0176DA6FC00FE5575 /* local.c in Sources */,
 				626C4ADB18B1E352003DBE33 /* NSData+Base64.m in Sources */,
@@ -1266,6 +1479,7 @@
 				623A7EC71795B0C700DF11DF /* encrypt.c in Sources */,
 				623A7EC91795B0D300DF11DF /* local.m in Sources */,
 				623A7EC81795B0C900DF11DF /* table.m in Sources */,
+				049DB1BE1D17CD6100B956E1 /* SWBUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,6 +1489,7 @@
 			files = (
 				62E27E5A18C1D0CF0086033D /* GZIP.m in Sources */,
 				629AC93418B49676001D2771 /* GCDWebServer.m in Sources */,
+				049DB1BF1D17CD6100B956E1 /* SWBUtils.m in Sources */,
 				628C91BD1A07AA5800BA1566 /* Profile.m in Sources */,
 				629AC93518B49676001D2771 /* GCDWebServerConnection.m in Sources */,
 				62E2E1941A5AB1E600C9A2E1 /* AFURLConnectionOperation.m in Sources */,
@@ -1379,6 +1594,7 @@
 /* Begin XCBuildConfiguration section */
 		6205309E18D4443E00887D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E25C0B403960F5980F8A97 /* Pods-shadowsocks_sysconf.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1406,6 +1622,7 @@
 		};
 		6205309F18D4443E00887D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7690680B85C2CC2BB4C0336C /* Pods-shadowsocks_sysconf.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1444,6 +1661,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1457,6 +1675,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "OpenSSL-for-iPhone/include/";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1486,6 +1705,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "OpenSSL-for-iPhone/include/";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1497,8 +1717,8 @@
 		};
 		621571CC16CF6BCB003D96B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F086D835B0070B483EDEC2 /* Pods-shadowsocks.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1520,6 +1740,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/OpenSSL-for-iPhone/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = shadowsocks;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1529,8 +1750,8 @@
 		};
 		621571CD16CF6BCB003D96B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA376E731471FC47463CB7F4 /* Pods-shadowsocks.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1552,6 +1773,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/OpenSSL-for-iPhone/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = shadowsocks;
 				PROVISIONING_PROFILE = "10B86086-082B-4967-8900-EDF458793F84";
 				WRAPPER_EXTENSION = app;
@@ -1560,8 +1782,8 @@
 		};
 		623A7EC31795AE8000DF11DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6875BFF13AD884920C584F7 /* Pods-libshadowsocks.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/libshadowsocks.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1582,8 +1804,8 @@
 		};
 		623A7EC41795AE8000DF11DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F7E8426329C76040380F0A /* Pods-libshadowsocks.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/libshadowsocks.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1604,16 +1826,19 @@
 		};
 		627A6E2418B47E9300493BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C37277C988C81455B93297F /* Pods-ShadowsocksX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/usr/local/lib,
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1628,7 +1853,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ShadowsocksX/ShadowsocksX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "clowwindy.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1636,18 +1863,21 @@
 		};
 		627A6E2518B47E9300493BBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34E90A7C96FAB88F3CE8D3B /* Pods-ShadowsocksX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/usr/local/lib,
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1658,7 +1888,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ShadowsocksX/ShadowsocksX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "clowwindy.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};

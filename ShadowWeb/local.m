@@ -28,10 +28,11 @@ int create_and_bind(const char *port) {
     int s, listen_sock = 0;
 
     memset(&hints, 0, sizeof(struct addrinfo));
-    hints.ai_family = AF_UNSPEC; /* Return IPv4 and IPv6 choices */
+    hints.ai_family = AF_INET; /* Return IPv4 and IPv6 choices */
     hints.ai_socktype = SOCK_STREAM; /* We want a TCP socket */
-
-    s = getaddrinfo("127.0.0.1", port, &hints, &result);
+    
+    //NULL meanings all ports avaliable
+    s = getaddrinfo("0.0.0.0", port, &hints, &result);
     if (s != 0) {
         NSLog(@"getaddrinfo: %s", gai_strerror(s));
         return -1;

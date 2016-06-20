@@ -14,6 +14,7 @@
 #import "ShadowsocksRunner.h"
 #import "ProfileManager.h"
 #import "AFNetworking.h"
+#import "SWBUtils.h"
 
 #define kShadowsocksIsRunningKey @"ShadowsocksIsRunning"
 #define kShadowsocksRunningModeKey @"ShadowsocksMode"
@@ -56,6 +57,16 @@ static SWBAppDelegate *appDelegate;
         return [GCDWebServerDataResponse responseWithData:[self PACData] contentType:@"application/x-ns-proxy-autoconfig"];
     }
     ];
+    
+    [webServer addHandlerForMethod:@"GET" path:@"/auto-proxy.pac" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
+        NSString * host = [request headers][@"Host"];
+        host = [host stringByReplacingOccurrencesOfString:@":8090" withString:@""];
+        
+        NSLog(@"%@ request pac: %@", [request  headers], [[request URL] absoluteString]);
+        return [GCDWebServerDataResponse responseWithData:[self autoPACData:host] contentType:@"application/x-ns-proxy-autoconfig"];
+    }];
+
+    
 
     [webServer startWithPort:8090 bonjourName:@"webserver"];
 
@@ -127,6 +138,20 @@ static SWBAppDelegate *appDelegate;
     } else {
         return originalPACData;
     }
+}
+
+- (NSData *)autoPACData:(NSString *)host {
+    NSData * fileData = nil;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:PACPath]) {
+        fileData = [NSData dataWithContentsOfFile:PACPath];
+    } else {
+        fileData = originalPACData;
+    }
+    
+    
+    NSString * pacString = [[NSString alloc] initWithData:fileData encoding:NSUTF8StringEncoding];
+    pacString = [pacString stringByReplacingOccurrencesOfString:@"127.0.0.1" withString:host];
+    return [pacString dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void)enableAutoProxy {

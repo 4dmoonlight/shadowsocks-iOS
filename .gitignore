@@ -2,5 +2,9 @@ build
 .idea/
 shadowsocks.xcodeproj/project.xcworkspace/
 shadowsocks.xcodeproj/xcuserdata/
+shadowsocks.xcworkspace/xcuserdata/
+zxing-objc/ZXingObjC.xcodeproj/xcuserdata/
 .DS_STORE
 *.dmg
+/Pods
+Podfile.lock
