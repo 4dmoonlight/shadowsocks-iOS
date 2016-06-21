@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0422E0191D1948BB00CCA401 /* SWBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422E0181D1948BB00CCA401 /* SWBackgroundTask.m */; };
 		049DB1BF1D17CD6100B956E1 /* SWBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DB1BC1D17CD6100B956E1 /* SWBUtils.m */; };
 		6205309618D4443E00887D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		6205309918D4443E00887D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205309818D4443E00887D3E /* main.m */; };
@@ -231,6 +232,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0422E0171D1948BB00CCA401 /* SWBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBackgroundTask.h; sourceTree = "<group>"; };
+		0422E0181D1948BB00CCA401 /* SWBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBackgroundTask.m; sourceTree = "<group>"; };
 		049DB1BB1D17CD6100B956E1 /* SWBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBUtils.h; sourceTree = "<group>"; };
 		049DB1BC1D17CD6100B956E1 /* SWBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBUtils.m; sourceTree = "<group>"; };
 		09F7E8426329C76040380F0A /* Pods-libshadowsocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libshadowsocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-libshadowsocks/Pods-libshadowsocks.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,13 +252,13 @@
 		621571B216CF6BCB003D96B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		621571B416CF6BCB003D96B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		621571B616CF6BCB003D96B4 /* shadowsocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-Prefix.pch"; sourceTree = "<group>"; };
-		621571B716CF6BCB003D96B4 /* SWBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBAppDelegate.h; sourceTree = "<group>"; };
-		621571B816CF6BCB003D96B4 /* SWBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBAppDelegate.m; sourceTree = "<group>"; };
+		621571B716CF6BCB003D96B4 /* SWBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWBAppDelegate.h; path = ShadowWeb/SWBAppDelegate.h; sourceTree = "<group>"; };
+		621571B816CF6BCB003D96B4 /* SWBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SWBAppDelegate.m; path = ShadowWeb/SWBAppDelegate.m; sourceTree = "<group>"; };
 		621571BA16CF6BCB003D96B4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		621571BC16CF6BCB003D96B4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		621571BE16CF6BCB003D96B4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		621571C016CF6BCB003D96B4 /* SWBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWBViewController.h; sourceTree = "<group>"; };
-		621571C116CF6BCB003D96B4 /* SWBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWBViewController.m; sourceTree = "<group>"; };
+		621571C016CF6BCB003D96B4 /* SWBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWBViewController.h; path = ShadowWeb/SWBViewController.h; sourceTree = "<group>"; };
+		621571C116CF6BCB003D96B4 /* SWBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SWBViewController.m; path = ShadowWeb/SWBViewController.m; sourceTree = "<group>"; };
 		621571D016CF6D50003D96B4 /* SWBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SWBTabView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		621571D116CF6D50003D96B4 /* SWBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBTabView.m; sourceTree = "<group>"; };
 		621571D216CF6D50003D96B4 /* SWBTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SWBTab.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -340,8 +343,8 @@
 		628693F016DA2816008B1A26 /* local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = local.m; sourceTree = "<group>"; };
 		628693F116DA2816008B1A26 /* local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
 		628693F216DA2816008B1A26 /* socks5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socks5.h; sourceTree = "<group>"; };
-		628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxySettingsTableViewController.h; sourceTree = "<group>"; };
-		628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxySettingsTableViewController.m; sourceTree = "<group>"; };
+		628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProxySettingsTableViewController.h; path = ShadowWeb/ProxySettingsTableViewController.h; sourceTree = "<group>"; };
+		628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProxySettingsTableViewController.m; path = ShadowWeb/ProxySettingsTableViewController.m; sourceTree = "<group>"; };
 		628693FD16DA2983008B1A26 /* ev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ev.c; path = libev/ev.c; sourceTree = "<group>"; };
 		628C3DE218AD5B100090632A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		628C3DE318AD5B700090632A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -461,24 +464,24 @@
 		C8D3AC00589C0E0D4F8AE9B4 /* libPods-shadowsocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shadowsocks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F086D835B0070B483EDEC2 /* Pods-shadowsocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks.debug.xcconfig"; sourceTree = "<group>"; };
 		DA376E731471FC47463CB7F4 /* Pods-shadowsocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadowsocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-shadowsocks/Pods-shadowsocks.release.xcconfig"; sourceTree = "<group>"; };
-		EB189069EF341E65B5414D00 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		EB189069EF341E65B5414D00 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRCodeViewController.h; path = ShadowWeb/QRCodeViewController.h; sourceTree = "<group>"; };
 		EB189071407B3A2A9B4C83CB /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManager.h; sourceTree = "<group>"; };
 		EB1891B68FCBD841C5E461B6 /* About.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = About.md; sourceTree = SOURCE_ROOT; };
 		EB1891FD08E70E9E9DC84AFD /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
 		EB1892B5027A6B1F1E2CDC12 /* ProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileManager.m; sourceTree = "<group>"; };
-		EB1892CE8806A5E5632B5714 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
-		EB18942F05960F64CC059413 /* SimpleTableViewSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewSource.h; sourceTree = "<group>"; };
+		EB1892CE8806A5E5632B5714 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRCodeViewController.m; path = ShadowWeb/QRCodeViewController.m; sourceTree = "<group>"; };
+		EB18942F05960F64CC059413 /* SimpleTableViewSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTableViewSource.h; path = ShadowWeb/SimpleTableViewSource.h; sourceTree = "<group>"; };
 		EB1895348E32ABA4F4F86742 /* SWBConfigWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBConfigWindowController.m; sourceTree = "<group>"; };
-		EB1895847BCC9ED701A0C8CB /* SWBAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBAboutController.h; sourceTree = "<group>"; };
+		EB1895847BCC9ED701A0C8CB /* SWBAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWBAboutController.h; path = ShadowWeb/SWBAboutController.h; sourceTree = "<group>"; };
 		EB1896EFEA137F75386005D4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		EB1897832237B71EF50B3DF4 /* SimpleTableViewSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewSource.m; sourceTree = "<group>"; };
-		EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowsocksRunner.m; sourceTree = "<group>"; };
+		EB1897832237B71EF50B3DF4 /* SimpleTableViewSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleTableViewSource.m; path = ShadowWeb/SimpleTableViewSource.m; sourceTree = "<group>"; };
+		EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShadowsocksRunner.m; path = ShadowWeb/ShadowsocksRunner.m; sourceTree = "<group>"; };
 		EB1897A8F80969EC7477F89D /* 3gnet_enable.mobileconfig */ = {isa = PBXFileReference; lastKnownFileType = file.mobileconfig; path = 3gnet_enable.mobileconfig; sourceTree = "<group>"; };
 		EB1897AD03717EB5E44BA24B /* 3gnet_disable.mobileconfig */ = {isa = PBXFileReference; lastKnownFileType = file.mobileconfig; path = 3gnet_disable.mobileconfig; sourceTree = "<group>"; };
 		EB189A194D9EB70D1C8E7123 /* SWBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBApplication.h; sourceTree = "<group>"; };
 		EB189ABF1BF9729F1E0E8F72 /* SWBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBApplication.m; sourceTree = "<group>"; };
-		EB189E412781A71BA967EECE /* ShadowsocksRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowsocksRunner.h; sourceTree = "<group>"; };
-		EB189EE1CF6E8C6C431B87BA /* SWBAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBAboutController.m; sourceTree = "<group>"; };
+		EB189E412781A71BA967EECE /* ShadowsocksRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadowsocksRunner.h; path = ShadowWeb/ShadowsocksRunner.h; sourceTree = "<group>"; };
+		EB189EE1CF6E8C6C431B87BA /* SWBAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWBAboutController.m; path = ShadowWeb/SWBAboutController.m; sourceTree = "<group>"; };
 		EB189F12BEB086705288D293 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = SOURCE_ROOT; };
 		EB189F29205BA2AB998B867D /* polipo_disable.config */ = {isa = PBXFileReference; lastKnownFileType = file.config; path = polipo_disable.config; sourceTree = "<group>"; };
 		EB189F33A120A109D84FF977 /* SWBConfigWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBConfigWindowController.h; sourceTree = "<group>"; };
@@ -549,6 +552,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0422E0111D19462200CCA401 /* ShadowsocksIOS */ = {
+			isa = PBXGroup;
+			children = (
+				621571CF16CF6D1F003D96B4 /* ToolBar */,
+				621571EC16CF7810003D96B4 /* Others */,
+				621571AF16CF6BCB003D96B4 /* Supporting Files */,
+				621571CE16CF6D19003D96B4 /* TabBar */,
+				621571E216CF74BC003D96B4 /* WebView */,
+				621571B716CF6BCB003D96B4 /* SWBAppDelegate.h */,
+				621571B816CF6BCB003D96B4 /* SWBAppDelegate.m */,
+				EB189EE1CF6E8C6C431B87BA /* SWBAboutController.m */,
+				EB1895847BCC9ED701A0C8CB /* SWBAboutController.h */,
+				621571C016CF6BCB003D96B4 /* SWBViewController.h */,
+				621571C116CF6BCB003D96B4 /* SWBViewController.m */,
+				628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */,
+				628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */,
+				EB1897832237B71EF50B3DF4 /* SimpleTableViewSource.m */,
+				EB18942F05960F64CC059413 /* SimpleTableViewSource.h */,
+				EB1892CE8806A5E5632B5714 /* QRCodeViewController.m */,
+				EB189069EF341E65B5414D00 /* QRCodeViewController.h */,
+				EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */,
+				EB189E412781A71BA967EECE /* ShadowsocksRunner.h */,
+			);
+			name = ShadowsocksIOS;
+			sourceTree = "<group>";
+		};
 		6205309718D4443E00887D3E /* shadowsocks_sysconf */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +598,7 @@
 		6215719C16CF6BCA003D96B4 = {
 			isa = PBXGroup;
 			children = (
+				0422E0111D19462200CCA401 /* ShadowsocksIOS */,
 				621571AE16CF6BCB003D96B4 /* ShadowWeb */,
 				627A6DFE18B47E9300493BBC /* ShadowsocksX */,
 				627A6E1C18B47E9300493BBC /* ShadowsocksXTests */,
@@ -643,17 +673,6 @@
 				628693FA16DA2823008B1A26 /* Shadowsocks */,
 				628693F916DA281C008B1A26 /* libev */,
 				628693DE16DA2564008B1A26 /* AppProxyCap */,
-				621571EC16CF7810003D96B4 /* Others */,
-				621571E216CF74BC003D96B4 /* WebView */,
-				621571CF16CF6D1F003D96B4 /* ToolBar */,
-				621571CE16CF6D19003D96B4 /* TabBar */,
-				621571B716CF6BCB003D96B4 /* SWBAppDelegate.h */,
-				621571B816CF6BCB003D96B4 /* SWBAppDelegate.m */,
-				621571C016CF6BCB003D96B4 /* SWBViewController.h */,
-				621571C116CF6BCB003D96B4 /* SWBViewController.m */,
-				621571AF16CF6BCB003D96B4 /* Supporting Files */,
-				EB189EE1CF6E8C6C431B87BA /* SWBAboutController.m */,
-				EB1895847BCC9ED701A0C8CB /* SWBAboutController.h */,
 			);
 			path = ShadowWeb;
 			sourceTree = "<group>";
@@ -680,6 +699,7 @@
 				EB1896EFEA137F75386005D4 /* LICENSE */,
 			);
 			name = "Supporting Files";
+			path = ShadowWeb;
 			sourceTree = "<group>";
 		};
 		621571CE16CF6D19003D96B4 /* TabBar */ = {
@@ -699,6 +719,7 @@
 				621571DB16CF6D50003D96B4 /* SWBSmallCloseButtonHighlightView.m */,
 			);
 			name = TabBar;
+			path = ShadowWeb;
 			sourceTree = "<group>";
 		};
 		621571CF16CF6D1F003D96B4 /* ToolBar */ = {
@@ -706,6 +727,7 @@
 			children = (
 			);
 			name = ToolBar;
+			path = ShadowWeb;
 			sourceTree = "<group>";
 		};
 		621571E216CF74BC003D96B4 /* WebView */ = {
@@ -717,11 +739,14 @@
 				621571E816CF74CC003D96B4 /* SWBWebViewContainer.m */,
 			);
 			name = WebView;
+			path = ShadowWeb;
 			sourceTree = "<group>";
 		};
 		621571EC16CF7810003D96B4 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				0422E0171D1948BB00CCA401 /* SWBackgroundTask.h */,
+				0422E0181D1948BB00CCA401 /* SWBackgroundTask.m */,
 				621571F016CF7FA6003D96B4 /* SWBPage.h */,
 				621571F116CF7FA6003D96B4 /* SWBPage.m */,
 				621571F216CF7FA6003D96B4 /* SWBPageManager.h */,
@@ -730,6 +755,7 @@
 				621571EE16CF782C003D96B4 /* SWBNetworkActivityIndicatorManager.m */,
 			);
 			name = Others;
+			path = ShadowWeb;
 			sourceTree = "<group>";
 		};
 		621FCBF817603FD600411E5F /* GCDWebServer */ = {
@@ -877,14 +903,6 @@
 				628693F116DA2816008B1A26 /* local.h */,
 				628693F016DA2816008B1A26 /* local.m */,
 				628693F216DA2816008B1A26 /* socks5.h */,
-				628693F316DA2817008B1A26 /* ProxySettingsTableViewController.h */,
-				628693F416DA2817008B1A26 /* ProxySettingsTableViewController.m */,
-				EB1897832237B71EF50B3DF4 /* SimpleTableViewSource.m */,
-				EB18942F05960F64CC059413 /* SimpleTableViewSource.h */,
-				EB1892CE8806A5E5632B5714 /* QRCodeViewController.m */,
-				EB189069EF341E65B5414D00 /* QRCodeViewController.h */,
-				EB1897A89055A4C2CFD81AF8 /* ShadowsocksRunner.m */,
-				EB189E412781A71BA967EECE /* ShadowsocksRunner.h */,
 			);
 			name = Shadowsocks;
 			sourceTree = "<group>";
@@ -1115,6 +1133,11 @@
 				TargetAttributes = {
 					621571A416CF6BCB003D96B4 = {
 						DevelopmentTeam = 6XJANXWF44;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					627A6DF618B47E9300493BBC = {
 						DevelopmentTeam = 6XJANXWF44;
@@ -1447,6 +1470,7 @@
 				62D85A97176DA6FC00FE5575 /* event.c in Sources */,
 				62D85A98176DA6FC00FE5575 /* forbidden.c in Sources */,
 				62D85A9A176DA6FC00FE5575 /* fts_compat.c in Sources */,
+				0422E0191D1948BB00CCA401 /* SWBackgroundTask.m in Sources */,
 				62D85A9B176DA6FC00FE5575 /* ftsimport.c in Sources */,
 				62D85A9C176DA6FC00FE5575 /* http.c in Sources */,
 				62D85A9D176DA6FC00FE5575 /* http_parse.c in Sources */,
@@ -1613,7 +1637,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -1639,7 +1663,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -1841,7 +1865,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ShadowsocksX/ShadowsocksX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "clowwindy.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1876,7 +1900,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "ShadowsocksX/ShadowsocksX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "clowwindy.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

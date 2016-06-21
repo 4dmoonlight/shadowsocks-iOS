@@ -572,7 +572,7 @@ int local_main ()
     char * port = "1080";
 
 #if TARGET_OS_IOS
-    port = "21080";
+    port = "9180";
 #endif
     
     int listenfd;
@@ -588,7 +588,7 @@ int local_main ()
         return 1;
     }
 #ifdef DEBUG
-    NSLog(@"server listening at port %s\n", "1080");
+    NSLog(@"server listening at port %s\n", port);
 #endif
 
     setnonblocking(listenfd);

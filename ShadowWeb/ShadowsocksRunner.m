@@ -26,9 +26,7 @@
         local_main();
         return YES;
     } else {
-#ifdef DEBUG
         NSLog(@"warning: settings are not complete");
-#endif
         return NO;
     }
 }

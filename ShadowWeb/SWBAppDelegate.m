@@ -15,6 +15,8 @@
 #import "SWBViewController.h"
 #import "ShadowsocksRunner.h"
 
+#import "SWBackgroundTask.h"
+
 #define kProxyModeKey @"proxy mode"
 
 int polipo_main(int argc, char **argv);
@@ -31,16 +33,15 @@ void polipo_exit();
     if (proxyMode == nil || [proxyMode isEqualToString:@"pac"]) {
         [AppProxyCap setPACURL:@"http://127.0.0.1:8090/proxy.pac"];
     } else if ([proxyMode isEqualToString:@"global"]) {
-        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:21080];
+        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:9180];
     } else{
         [AppProxyCap setNoProxy];
     }
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self updateProxyMode];
 
-    [Crashlytics startWithAPIKey:@"fa65e4ab45ef1c9c69682529bee0751cd22d5d80"];
+    //[Crashlytics startWithAPIKey:@"fa65e4ab45ef1c9c69682529bee0751cd22d5d80"];
 
     [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
 
@@ -71,15 +72,7 @@ void polipo_exit();
 
 
     [webServer startWithPort:8090 bonjourName:@"webserver"];
-//    dispatch_queue_t web = dispatch_queue_create("web", NULL);
-//    dispatch_async(web, ^{
-//        @try {
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//            });
-//        } @catch (NSException *e) {
-//            NSLog(@"webserver quit with error: %@", e);
-//        }
-//    });
+    
 
     self.networkActivityIndicatorManager = [[SWBNetworkActivityIndicatorManager alloc] init];
 
@@ -88,7 +81,15 @@ void polipo_exit();
     self.viewController = [[SWBViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-        
+    
+
+    [self updateProxyMode];
+    
+    SWBackgroundTask * bgTask = [[SWBackgroundTask alloc] init];
+    [bgTask sw_shouldRunBackgroundTask:^(NSTimeInterval time){
+        return YES;
+    }];
+    
     return YES;
 }
 
@@ -96,7 +97,7 @@ void polipo_exit();
     NSData *pacData = [[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"proxy" withExtension:@"pac.gz"]] gunzippedData];
     
     NSString * pacString = [[NSString alloc] initWithData:pacData encoding:NSUTF8StringEncoding];
-    pacString = [pacString stringByReplacingOccurrencesOfString:@":1080" withString:@":21080"];
+    pacString = [pacString stringByReplacingOccurrencesOfString:@":1080" withString:@":9180"];
     
     return [pacString dataUsingEncoding:NSUTF8StringEncoding];
 }
