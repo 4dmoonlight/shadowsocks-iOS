@@ -5,6 +5,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "D13D26D55186243D670B587A687BD8154BF7E34D" : 0,
+    "70FD92E6422A0BFF8F255BD3943E27A81643B64D" : 0,
     "8092C8C7FB5C3FF769ACA4A4D09F354B1F39375F" : 0,
     "CF7A89EA97096B2ABF1C411375A43655D55CF356" : 0,
     "F6F96CA34C5878B0A9123C7C37855491A5E599DA" : 0,
@@ -16,6 +17,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4135ED5F-7B3B-4717-BBD2-1925C1419039",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "D13D26D55186243D670B587A687BD8154BF7E34D" : "shadowsocks-iOS\/NSData-Base64\/",
+    "70FD92E6422A0BFF8F255BD3943E27A81643B64D" : "shadowsocks-iOS\/AppProxyCap\/lib\/inject_and_interpose\/",
     "8092C8C7FB5C3FF769ACA4A4D09F354B1F39375F" : "shadowsocks-iOS\/OpenSSL-for-iPhone\/",
     "CF7A89EA97096B2ABF1C411375A43655D55CF356" : "shadowsocks-iOS\/AppProxyCap\/",
     "F6F96CA34C5878B0A9123C7C37855491A5E599DA" : "shadowsocks-iOS\/GCDWebServer\/",
@@ -42,6 +44,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nicklockwood\/GZIP.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ACBD9B75A9AF01FED3B43D5A1DC054996850174"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/comex\/inject_and_interpose.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70FD92E6422A0BFF8F255BD3943E27A81643B64D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/clowwindy\/OpenSSL-for-iPhone.git",

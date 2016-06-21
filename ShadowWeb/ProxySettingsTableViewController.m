@@ -234,6 +234,7 @@
                                                                                                    @"idea-cfb",
                                                                                                    @"rc2-cfb",
                                                                                                    @"rc4",
+                                                                                                   @"rc4-md5",
                                                                                                    @"seed-cfb",
                                                                                                    nil]
                                                                   values:[NSArray arrayWithObjects:@"table",
@@ -249,6 +250,7 @@
                                                                                                    @"idea-cfb",
                                                                                                    @"rc2-cfb",
                                                                                                    @"rc4",
+                                                                                                   @"rc4-md5",
                                                                                                    @"seed-cfb",
                                                                                                    nil]
                                                             initialValue:v selectionBlock:^(NSObject *value) {

@@ -31,7 +31,7 @@ void polipo_exit();
     if (proxyMode == nil || [proxyMode isEqualToString:@"pac"]) {
         [AppProxyCap setPACURL:@"http://127.0.0.1:8090/proxy.pac"];
     } else if ([proxyMode isEqualToString:@"global"]) {
-        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:1080];
+        [AppProxyCap setProxy:AppProxy_SOCKS Host:@"127.0.0.1" Port:21080];
     } else{
         [AppProxyCap setNoProxy];
     }
@@ -54,7 +54,7 @@ void polipo_exit();
 //    [self proxyHttpStart];
 //    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updatePolipo) userInfo:nil repeats:YES];
 
-    NSData *pacData = [[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"proxy" withExtension:@"pac.gz"]] gunzippedData];
+    NSData* pacData = [self iosPacData];
     GCDWebServer *webServer = [[GCDWebServer alloc] init];
     [webServer addHandlerForMethod:@"GET" path:@"/proxy.pac" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
              return [GCDWebServerDataResponse responseWithData:pacData contentType:@"application/x-ns-proxy-autoconfig"];
@@ -92,6 +92,14 @@ void polipo_exit();
     return YES;
 }
 
+-(NSData *)iosPacData {
+    NSData *pacData = [[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"proxy" withExtension:@"pac.gz"]] gunzippedData];
+    
+    NSString * pacString = [[NSString alloc] initWithData:pacData encoding:NSUTF8StringEncoding];
+    pacString = [pacString stringByReplacingOccurrencesOfString:@":1080" withString:@":21080"];
+    
+    return [pacString dataUsingEncoding:NSUTF8StringEncoding];
+}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return [self application:application openURL:url sourceApplication:nil annotation:nil];

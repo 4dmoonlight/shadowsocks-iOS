@@ -31,8 +31,13 @@ int create_and_bind(const char *port) {
     hints.ai_family = AF_INET; /* Return IPv4 and IPv6 choices */
     hints.ai_socktype = SOCK_STREAM; /* We want a TCP socket */
     
-    //NULL meanings all ports avaliable
-    s = getaddrinfo("0.0.0.0", port, &hints, &result);
+    char * address = "0.0.0.0";
+    
+#if TARGET_OS_IOS
+    address = "127.0.0.1";
+#endif
+    
+    s = getaddrinfo(address, port, &hints, &result);
     if (s != 0) {
         NSLog(@"getaddrinfo: %s", gai_strerror(s));
         return -1;
@@ -59,7 +64,7 @@ int create_and_bind(const char *port) {
     }
 
     if (rp == NULL) {
-        NSLog(@"Could not bind");
+        NSLog(@"Could not bind to %s:%s", address, port);
         return -1;
     }
 
@@ -564,8 +569,14 @@ void set_config(const char *server, const char *remote_port, const char* passwor
 
 int local_main ()
 {
+    char * port = "1080";
+
+#if TARGET_OS_IOS
+    port = "21080";
+#endif
+    
     int listenfd;
-    listenfd = create_and_bind("1080");
+    listenfd = create_and_bind(port);
     if (listenfd < 0) {
 #ifdef DEBUG
         NSLog(@"bind() error..");

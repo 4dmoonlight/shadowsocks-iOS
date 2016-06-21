@@ -29,6 +29,10 @@ const long RFC2445_DURATION_FIELD_UNITS[RFC2445_DURATION_FIELD_UNITS_LEN] = {
   60 * 1000, // 1 minute
   1000, // 1 second
 };
+@interface ZXCalendarParsedResult () {
+    NSString * _description;
+}
+@end
 
 @implementation ZXCalendarParsedResult
 

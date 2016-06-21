@@ -7,6 +7,8 @@ pod 'libsodium', '~> 1.0.3'
 
 target 'shadowsocks' do
 
+pod 'OpenSSL-Universal'
+
 end
 
 target 'libshadowsocks' do
