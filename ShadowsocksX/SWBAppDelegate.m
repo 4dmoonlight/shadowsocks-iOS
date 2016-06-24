@@ -54,9 +54,13 @@ static SWBAppDelegate *appDelegate;
     originalPACData = [[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"proxy" withExtension:@"pac.gz"]] gunzippedData];
     GCDWebServer *webServer = [[GCDWebServer alloc] init];
     [webServer addHandlerForMethod:@"GET" path:@"/proxy.pac" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
-        return [GCDWebServerDataResponse responseWithData:[self PACData] contentType:@"application/x-ns-proxy-autoconfig"];
-    }
-    ];
+        NSString * host = [request headers][@"Host"];
+        host = [host stringByReplacingOccurrencesOfString:@":8090" withString:@""];
+        
+        NSLog(@"%@ request pac: %@", [request  headers], [[request URL] absoluteString]);
+        return [GCDWebServerDataResponse responseWithData:[self autoPACData:host] contentType:@"application/x-ns-proxy-autoconfig"];
+
+    }];
     
     [webServer addHandlerForMethod:@"GET" path:@"/auto-proxy.pac" requestClass:[GCDWebServerRequest class] processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request) {
         NSString * host = [request headers][@"Host"];
