@@ -12,6 +12,7 @@
 #import "SWBAppDelegate.h"
 
 #import "GCDWebServer.h"
+#import "GCDWebServerDataResponse.h"
 #import "SWBViewController.h"
 #import "ShadowsocksRunner.h"
 
